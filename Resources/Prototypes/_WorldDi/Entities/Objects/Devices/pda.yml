@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: BaseSecurityPDA
+  id: IAAPDA
+  name: internal affairs PDA
+  description: An internal affairs agent's PDA. Used for official investigations.
+  components:
+  - type: Pda
+    id: IAAIDCard
+    penSlot:
+      startingItem: LuxuryPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-lawyer
+  - type: PdaBorderColor
+    borderColor: "#1a1a4d"
+  - type: Icon
+    state: pda-lawyer

@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: SpawnPointInternalAffairsAgent
+  parent: SpawnPointJobBase
+  name: internal affairs agent
+  components:
+  - type: SpawnPoint
+    job_id: InternalAffairsAgent
+  - type: Sprite
+    layers:
+      - state: green
+      - state: lawyer

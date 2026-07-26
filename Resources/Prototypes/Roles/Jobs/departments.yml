@@ -90,6 +90,7 @@
   - DeathSquad
   - HecuOperative
   - CommandMaid # event-restricted, Goobstation
+  - InternalAffairsAgent # WorldDi
   primary: false
   weight: 100
 

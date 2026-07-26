@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  name: rubber stamp
+  parent: RubberStampBase
+  id: RubberStampIAA
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-iaa
+    stampedColor: "#1a1a4d"
+    stampState: "paper_stamp-lawyer"
+    stampLargeIcon: "large_stamp-law"
+  - type: Sprite
+    state: stamp-lawyer

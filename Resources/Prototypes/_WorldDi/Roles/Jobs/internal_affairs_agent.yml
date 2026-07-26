@@ -1,0 +1,51 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: job
+  id: InternalAffairsAgent
+  name: job-name-internal-affairs-agent
+  description: job-description-internal-affairs-agent
+  playTimeTracker: JobInternalAffairsAgent
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 5h
+  startingGear: InternalAffairsAgentGear
+  icon: "JobIconLawyer"
+  supervisors: job-supervisors-centcom
+  whitelisted: true
+  weight: 20
+  goobcoins: 15
+  access:
+  - Brig
+  - Command
+  - Lawyer
+  - Security
+  - Maintenance
+  - Service
+
+- type: startingGear
+  id: InternalAffairsAgentGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLawyerBlack
+    shoes: ClothingShoesBootsLaceup
+    id: IAAPDA
+    ears: ClothingHeadsetAltCommand
+    eyes: ClothingEyesGlassesCommand
+    neck: ClothingNeckLawyerbadge
+    back: ClothingBackpackSatchel
+  inhand:
+    - BriefcaseBrownFilled
+  storage:
+    back:
+    - RubberStampIAA
+    - BookSpaceLaw
+
+- type: chameleonOutfit
+  id: InternalAffairsAgentChameleonOutfit
+  job: InternalAffairsAgent
+  equipment:
+    head: ClothingHeadHatBowlerHat
+    eyes: ClothingEyesGlassesCheapSunglasses
+    mask: ClothingMaskBreath
+    neck: ClothingNeckLawyerbadge
+    outerClothing: ClothingOuterWinterColorBlack
+    gloves: ClothingHandsGlovesColorBlack
